@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6efdf" />
+    <meta
+      name="description"
+      content="Yagna Dhruva '26 — a campus techno-cultural festival."
+    />
+    <title>Yagna Dhruva ’26 — Enter the Chaos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="title-intro.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="intro-loader"
+      id="introLoader"
+      aria-label="Loading Yagna Dhruva"
+    >
+      <div class="loader-spiral">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+        ><i></i><i></i>
+      </div>
+      <div class="loader-wordmark">YAGNA <span>DHRUVA ’26</span></div>
+      <div class="loader-caption">SPIN INTO THE FEST ✳</div>
+    </div>
+    <section
+      class="title-intro"
+      id="titleIntro"
+      aria-label="Yagna Dhruva festival title"
+      hidden
+    >
+      <video
+        id="titleIntroVideo"
+        class="title-intro-video"
+        muted
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source
+          src="https://cdn.dribbble.com/userupload/30782066/file/original-12922c7ecd9452f5444f05c0557a9304.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="title-intro-wash"></div>
+      <div class="title-intro-kicker">LBSITW PRESENTS · 10 OCTOBER 2026</div>
+      <div class="title-intro-title" id="titleIntroTitle">
+        <span>YAGNA</span><span>DHRUVA <b>’26</b></span>
+      </div>
+      <div class="title-intro-bottom">
+        <span>THINK LOUD. FEEL EVERYTHING.</span
+        ><button id="skipIntro" type="button">SKIP INTRO ↗</button>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Festival ticker">
+      <div class="ticker-track">
+        <span
+          >YAGNA DHRUVA ’26 ✳ MAKE SOME NOISE ✳ THINK LOUD ✳ CREATE CHAOS
+          ✳</span
+        ><span
+          >YAGNA DHRUVA ’26 ✳ MAKE SOME NOISE ✳ THINK LOUD ✳ CREATE CHAOS
+          ✳</span
+        >
+      </div>
+    </div>
+    <header class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Yagna Dhruva home"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      ><button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="mainNav">
+        <a href="#worlds">THE WORLDS</a><a href="technical.html">YAGNA</a
+        ><a href="cultural.html">DHRUVA</a><a href="proshow.html">PROSHOW</a
+        ><a href="schedule.html">SCHEDULE</a
+        ><a class="nav-cta" href="technical.html">GET IN THE MIX ↗</a>
+      </nav>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div class="hero-scribble scribble-one">NO<br />RULES!</div>
+        <div class="hero-scribble scribble-two">✳ LET'S<br />GO ✳</div>
+        <div class="hero-topline">
+          <span>COLLEGE FEST / VOL. ’26</span
+          ><span class="live-dot">● LIVE IN YOUR IMAGINATION</span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow reveal">THE CAMPUS IS YOURS TO REWRITE</p>
+          <h1 class="hero-title reveal">
+            <span>YAGNA</span
+            ><span class="title-second">DHRUVA<sup>’26</sup></span>
+          </h1>
+          <div class="hero-bottom reveal">
+            <p>
+              Big ideas. Loud art. Late-night energy.<br /><strong
+                >One campus. Zero chill.</strong
+              >
+            </p>
+            <a href="#worlds" class="sticker-button"
+              >DIVE RIGHT IN <span>↘</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          aria-label="Abstract comic style festival illustration"
+        >
+          <div class="sunburst"></div>
+          <div class="hero-photo photo-main"></div>
+          <div class="hero-photo photo-small"></div>
+          <div class="comic-star star-a">✳</div>
+          <div class="comic-star star-b">✦</div>
+          <div class="hero-caption">A LITTLE<br />LOUDER.</div>
+          <div class="halftone"></div>
+        </div>
+        <div class="hero-footer">
+          <span>10 OCTOBER / DAY 03</span
+          ><span>SCROLL TO UNLOCK THE CHAOS ↓</span><span>KERALA, INDIA</span>
+        </div>
+      </section>
+      <section class="intro-strip">
+        <span class="strip-stamp">NOT YOUR<br />USUAL FEST.</span>
+        <p>
+          Forget the ordinary. <em>Make a scene.</em> From code that clicks to
+          beats that hit — this is where every kind of creative chaos belongs.
+        </p>
+        <span class="doodle-arrow">↘</span>
+      </section>
+      <section class="worlds section-pad" id="worlds">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">PICK YOUR UNIVERSE / 01—03</p>
+            <h2>THREE WORLDS.<br /><span>ONE BIG BANG.</span></h2>
+          </div>
+          <p class="heading-note">
+            Different energies. Same wild heartbeat. Where are you heading
+            first?
+          </p>
+        </div>
+        <div class="world-grid">
+          <a href="technical.html" class="world-card world-tech reveal"
+            ><span class="world-number">01 / THE THINKERS</span>
+            <div class="world-art tech-art">
+              <div class="orbit orbit-a"></div>
+              <div class="orbit orbit-b"></div>
+              <div class="tech-symbol">&lt;/&gt;</div>
+              <span class="art-label">IDEAS IN<br />OVERDRIVE</span>
+            </div>
+            <div class="world-card-foot">
+              <div>
+                <h3>YAGNA</h3>
+                <p>Hack it. Build it. Break the limits.</p>
+              </div>
+              <span class="round-arrow">↗</span>
+            </div></a
+          ><a href="cultural.html" class="world-card world-culture reveal"
+            ><span class="world-number">02 / THE FEELERS</span>
+            <div class="world-art culture-art">
+              <div class="culture-sun"></div>
+              <div class="culture-cutout">ART<br />LOUD.</div>
+              <span class="culture-spark">✳</span
+              ><span class="art-label">FEEL IT<br />ALL.</span>
+            </div>
+            <div class="world-card-foot">
+              <div>
+                <h3>DHRUVA</h3>
+                <p>Paint outside every line.</p>
+              </div>
+              <span class="round-arrow">↗</span>
+            </div></a
+          ><a href="proshow.html" class="world-card world-show reveal"
+            ><span class="world-number">03 / THE NIGHT OWLS</span>
+            <div class="world-art show-art">
+              <div class="show-disc"></div>
+              <div class="show-word">TURN<br />IT UP!</div>
+              <span class="show-light light-one"></span
+              ><span class="show-light light-two"></span
+              ><span class="art-label">FEEL THE<br />FREQUENCY</span>
+            </div>
+            <div class="world-card-foot">
+              <div>
+                <h3>PROSHOW</h3>
+                <p>One stage. All the feels.</p>
+              </div>
+              <span class="round-arrow">↗</span>
+            </div></a
+          >
+        </div>
+      </section>
+      <section class="event-section section-pad" id="events">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">FIND YOUR THING / 02</p>
+            <h2>THE EVENT<br /><span>PLAYGROUND.</span></h2>
+          </div>
+          <p class="heading-note">
+            Scroll the lineup, find your people, claim your spot. Demo
+            registration only — details are editable.
+          </p>
+        </div>
+        <div class="event-controls">
+          <label class="search-box"
+            ><span>⌕</span
+            ><input
+              id="eventSearch"
+              type="search"
+              placeholder="Search events, vibes, anything…"
+              aria-label="Search events"
+          /></label>
+          <div class="filter-list" id="categoryFilters">
+            <button class="filter-chip active" data-category="All">
+              ALL EVENTS <span>↗</span></button
+            ><button class="filter-chip" data-category="Technical">TECH</button
+            ><button class="filter-chip" data-category="Cultural">
+              CULTURE</button
+            ><button class="filter-chip" data-category="Proshow">
+              PROSHOW
+            </button>
+          </div>
+        </div>
+        <div class="event-grid" id="eventGrid" aria-live="polite"></div>
+        <p class="empty-state" id="emptyState" hidden>
+          No events found. Try another search, bestie. ✳
+        </p>
+        <div class="my-events-wrap">
+          <button class="outline-button" id="myEventsToggle">
+            MY SAVED EVENTS <span>＋</span>
+          </button>
+          <div id="myEvents" class="my-events" hidden></div>
+        </div>
+      </section>
+      <section class="manifesto">
+        <div class="manifesto-top">
+          <span>THE ONLY RULE?</span><span>MAKE IT YOURS.</span>
+        </div>
+        <p class="manifesto-big">
+          COME AS<br />YOU ARE.<br /><span>LEAVE LOUDER.</span>
+        </p>
+        <div class="manifesto-doodle">✳<br />↗</div>
+        <p class="manifesto-bottom">
+          A campus full of possibility. A day full of stories. This is your sign
+          to show up.
+        </p>
+      </section>
+      <section class="schedule-section section-pad" id="schedule">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">SAVE THE DAY / 10.10.26</p>
+            <h2>DAY THREE.<br /><span>ALL GAS.</span></h2>
+          </div>
+          <p class="heading-note">
+            October 10 · Schedule reproduced from the supplied brief. Times and
+            venues are kept as provided.
+          </p>
+        </div>
+        <div class="schedule-tools">
+          <div class="schedule-date">SAT <strong>10</strong> OCT</div>
+          <label class="search-box schedule-search"
+            ><span>⌕</span
+            ><input
+              id="scheduleSearch"
+              type="search"
+              placeholder="Find an event or venue…"
+              aria-label="Search schedule"
+          /></label>
+        </div>
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>TIME</th>
+                <th>WHAT'S ON</th>
+                <th>WHERE</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+          </table>
+        </div>
+        <div class="schedule-mobile" id="scheduleMobile"></div>
+      </section>
+      <section class="proshow-section" id="proshow">
+        <div class="proshow-image">
+          <div class="proshow-sunburst"></div>
+          <div class="proshow-overlay-word">FEEL<br />EVERY<br />THING.</div>
+          <div class="proshow-sticker">LIVE<br />LOUD ✳</div>
+          <div class="proshow-small">SOUND CHECK<br />STARTS HERE ↗</div>
+        </div>
+        <div class="proshow-copy">
+          <p class="eyebrow">THE NIGHT BELONGS TO US / 03</p>
+          <h2>LIGHTS UP.<br /><span>WORLD OFF.</span></h2>
+          <p>
+            From the first soundcheck to the final beat, meet us at the main
+            stage. Performer and ticket details are not confirmed here; this is
+            a festival-site demo.
+          </p>
+          <div class="proshow-meta">
+            <span>10 OCTOBER</span><span>MAIN STAGE</span
+            ><span>DEMO EXPERIENCE</span>
+          </div>
+          <a href="#schedule" class="sticker-button"
+            >SEE THE LINEUP <span>↘</span></a
+          >
+        </div>
+      </section>
+      <section class="last-call">
+        <div class="last-call-doodle">✳</div>
+        <p class="eyebrow">YOUR PEOPLE ARE HERE.</p>
+        <h2>DON'T JUST<br /><span>HEAR ABOUT IT.</span></h2>
+        <a href="#events" class="sticker-button"
+          >FIND YOUR EVENT <span>↗</span></a
+        >
+        <div class="last-call-note">MAKE MEMORIES.<br />NOT EXCUSES.</div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="#home"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      >
+      <p>MADE FOR THE CURIOUS.<br />BUILT FOR THE LOUD.</p>
+      <div class="footer-links">
+        <a href="#worlds">WORLDS</a><a href="#events">EVENTS</a
+        ><a href="schedule.html">SCHEDULE</a>
+      </div>
+      <span class="footer-demo"
+        >DEMO WEBSITE · DETAILS SUBJECT TO CONFIRMATION</span
+      >
+    </footer>
+    <div class="modal-backdrop" id="registrationModal" hidden>
+      <section
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" id="modalClose" aria-label="Close dialog">
+          ×
+        </button>
+        <p class="eyebrow">CLAIM YOUR SPOT ✳ DEMO REGISTRATION</p>
+        <h2 id="modalTitle">YOU'RE<br /><span>ON THE LIST?</span></h2>
+        <p class="modal-event-line" id="modalEventLine"></p>
+        <form id="registrationForm" novalidate>
+          <input type="hidden" id="selectedEventId" /><label
+            >Your name<input
+              id="studentName"
+              name="name"
+              autocomplete="name"
+              placeholder="The name your friends yell"
+              required /></label
+          ><small class="field-error" id="nameError"></small
+          ><label
+            >Email address<input
+              id="studentEmail"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required /></label
+          ><small class="field-error" id="emailError"></small
+          ><label
+            >Indian mobile number<input
+              id="studentPhone"
+              name="phone"
+              type="tel"
+              inputmode="numeric"
+              autocomplete="tel"
+              placeholder="10-digit mobile number"
+              required /></label
+          ><small class="field-error" id="phoneError"></small
+          ><button type="submit" class="sticker-button submit-button">
+            COUNT ME IN <span>↗</span>
+          </button>
+          <p class="form-note">
+            Frontend demo only. No real ticket, payment or server-side
+            registration is created.
+          </p>
+        </form>
+      </section>
+    </div>
+    <div class="modal-backdrop success-backdrop" id="successModal" hidden>
+      <section
+        class="success-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="successTitle"
+      >
+        <div class="success-stamp">✓</div>
+        <p class="eyebrow">THAT'S THE SPIRIT</p>
+        <h2 id="successTitle">YOU'RE<br /><span>IN THE MIX!</span></h2>
+        <p id="successMessage"></p>
+        <button class="sticker-button" id="successClose">
+          BACK TO THE CHAOS <span>↗</span>
+        </button>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dhruva | Cultural Universe — Yagna Dhruva ’26</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <script src="category-page.js" defer></script>
+  </head>
+  <body class="category-page culture-page">
+    <div class="ticker">
+      <div class="ticker-track">
+        <span
+          >DHRUVA ✳ MAKE ART LOUD ✳ FEEL EVERYTHING ✳ DHRUVA ✳ MAKE ART LOUD ✳
+          FEEL EVERYTHING ✳</span
+        ><span
+          >DHRUVA ✳ MAKE ART LOUD ✳ FEEL EVERYTHING ✳ DHRUVA ✳ MAKE ART LOUD ✳
+          FEEL EVERYTHING ✳</span
+        >
+      </div>
+    </div>
+    <header class="nav-wrap">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      ><button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="mainNav">
+        <a href="index.html">HOME</a><a href="technical.html">YAGNA</a
+        ><a href="cultural.html">DHRUVA</a><a href="proshow.html">PROSHOW</a
+        ><a href="schedule.html">SCHEDULE</a>
+      </nav>
+    </header>
+    <main>
+      <section class="category-hero">
+        <div class="category-orbit"></div>
+        <p class="eyebrow">WORLD 02 / THE CULTURAL UNIVERSE</p>
+        <h1>DHRUVA<span>.</span></h1>
+        <p class="category-intro">
+          For the artists, performers, storytellers and beautifully chaotic
+          souls who make a campus feel alive.
+        </p>
+        <div class="hero-stamps">
+          <span>FEEL IT ALL ✳</span><span>MAKE A SCENE ↗</span
+          ><span>ART OUT LOUD</span>
+        </div>
+        <div class="category-hero-image culture-hero-image"></div>
+      </section>
+      <section class="category-listing section-pad">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FIND YOUR SPOT / 02</p>
+            <h2>MAKE SOME<br /><span>NOISE.</span></h2>
+          </div>
+          <p class="heading-note">
+            Discover cultural events and creative challenges. Registration fees
+            and seat counts are demo data.
+          </p>
+        </div>
+        <div class="category-toolbar">
+          <label class="search-box"
+            ><span>⌕</span
+            ><input
+              id="pageSearch"
+              type="search"
+              placeholder="Search cultural events…"
+              aria-label="Search cultural events" /></label
+          ><a href="schedule.html" class="sticker-button"
+            >FULL DAY 3 SCHEDULE ↗</a
+          >
+        </div>
+        <div class="event-grid" id="categoryGrid"></div>
+        <p class="empty-state" id="categoryEmpty" hidden>
+          No events found. Try another search.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      >
+      <p>MADE FOR THE CURIOUS.<br />BUILT FOR THE LOUD.</p>
+      <div class="footer-links">
+        <a href="index.html">HOME</a><a href="technical.html">YAGNA</a
+        ><a href="proshow.html">PROSHOW</a>
+      </div>
+      <span class="footer-demo"
+        >DEMO WEBSITE · DETAILS SUBJECT TO CONFIRMATION</span
+      >
+    </footer>
+    <div class="modal-backdrop" id="registrationModal" hidden>
+      <section
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" id="modalClose" aria-label="Close dialog">
+          ×
+        </button>
+        <p class="eyebrow">CLAIM YOUR SPOT ✳ DEMO REGISTRATION</p>
+        <h2 id="modalTitle">YOU'RE<br /><span>ON THE LIST?</span></h2>
+        <p class="modal-event-line" id="modalEventLine"></p>
+        <form id="registrationForm" novalidate>
+          <input type="hidden" id="selectedEventId" /><label
+            >Your name<input
+              id="studentName"
+              autocomplete="name"
+              placeholder="Your full name"
+              required /></label
+          ><small class="field-error" id="nameError"></small
+          ><label
+            >Email address<input
+              id="studentEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required /></label
+          ><small class="field-error" id="emailError"></small
+          ><label
+            >Indian mobile number<input
+              id="studentPhone"
+              type="tel"
+              inputmode="numeric"
+              autocomplete="tel"
+              placeholder="10-digit mobile number"
+              required /></label
+          ><small class="field-error" id="phoneError"></small
+          ><button class="sticker-button submit-button" type="submit">
+            COUNT ME IN ↗
+          </button>
+          <p class="form-note">
+            Frontend demo only. No real ticket or payment is created.
+          </p>
+        </form>
+      </section>
+    </div>
+    <div class="modal-backdrop" id="successModal" hidden>
+      <section class="success-card" role="dialog" aria-modal="true">
+        <div class="success-stamp">✓</div>
+        <h2>YOU'RE<br /><span>IN THE MIX!</span></h2>
+        <p id="successMessage"></p>
+        <button class="sticker-button" id="successClose">
+          BACK TO EVENTS ↗
+        </button>
+      </section>
+    </div>
+  </body>
+</html>

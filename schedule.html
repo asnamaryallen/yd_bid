@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Schedule | Day 3 — Yagna Dhruva ’26</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <script src="schedule-page.js" defer></script>
+  </head>
+  <body class="category-page schedule-page">
+    <div class="ticker">
+      <div class="ticker-track">
+        <span
+          >DAY 3 ✳ 10 OCTOBER ✳ ALL GAS ✳ DAY 3 ✳ 10 OCTOBER ✳ ALL GAS ✳</span
+        ><span
+          >DAY 3 ✳ 10 OCTOBER ✳ ALL GAS ✳ DAY 3 ✳ 10 OCTOBER ✳ ALL GAS ✳</span
+        >
+      </div>
+    </div>
+    <header class="nav-wrap">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      ><button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="mainNav">
+        <a href="index.html">HOME</a><a href="technical.html">YAGNA</a
+        ><a href="cultural.html">DHRUVA</a><a href="proshow.html">PROSHOW</a
+        ><a href="schedule.html">SCHEDULE</a>
+      </nav>
+    </header>
+    <main>
+      <section class="category-hero schedule-hero">
+        <div class="category-orbit"></div>
+        <p class="eyebrow">SAVE THE DAY / 10.10.26</p>
+        <h1>DAY 3<span>.</span></h1>
+        <p class="category-intro">
+          YAGNA DHRUVA ’26 — October 10. Times and venues are shown exactly as
+          supplied.
+        </p>
+      </section>
+      <section class="category-listing section-pad">
+        <div class="schedule-tools">
+          <div class="schedule-date">SAT <strong>10</strong> OCT</div>
+          <label class="search-box schedule-search"
+            ><span>⌕</span
+            ><input
+              id="scheduleSearch"
+              type="search"
+              placeholder="Find an event or venue…"
+              aria-label="Search schedule"
+          /></label>
+        </div>
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>TIME</th>
+                <th>WHAT'S ON</th>
+                <th>WHERE</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+          </table>
+        </div>
+        <div class="schedule-mobile" id="scheduleMobile"></div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html"
+        ><span class="brand-mark">YD<span>✳</span></span
+        ><span class="brand-copy">YAGNA<br />DHRUVA <b>’26</b></span></a
+      >
+      <p>MADE FOR THE CURIOUS.<br />BUILT FOR THE LOUD.</p>
+      <div class="footer-links">
+        <a href="index.html">HOME</a><a href="cultural.html">DHRUVA</a
+        ><a href="proshow.html">PROSHOW</a>
+      </div>
+      <span class="footer-demo"
+        >DEMO WEBSITE · DETAILS SUBJECT TO CONFIRMATION</span
+      >
+    </footer>
+  </body>
+</html>
